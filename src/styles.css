@@ -18,5 +18,5 @@ body {
 }
 
 .buy-item.buy {
-  text-decoration: underline;
+  text-decoration: overline;
 }
