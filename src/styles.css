@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  background-color: rgb(255, 100, 100);
+}
+
+.box-form {
+  padding: 50px;
+
+  background-color: bisque;
+}
+
+.buy-btn {
+  background-color: rgb(255, 100, 100);
+}
+
+.buy-item.buy {
+  text-decoration: underline;
+}
