@@ -1,15 +1,15 @@
 {
-   "name": "homework-11",
+   "name": "my-buy-list",
    "source": "src/index.html",
    "browserslist": "> 0.5%, last 2 versions, not dead",
-   "homepage": "https://sofiiashevtsova.github.io/goit-js-hw-11/",
+   "homepage": "https://sofiiashevtsova.github.io/my-buy-list/",
    "scripts": {
       "start": "parcel src/*.html",
-      "build": "parcel build src/*.html --public-url /goit-js-hw-11/"
+      "build": "parcel build src/*.html --public-url /my-buy-list/"
    },
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/SofiiaShevtsova/goit-js-hw-11.git"
+      "url": "git+https://github.com/SofiiaShevtsova/my-buy-list.git"
    },
    "author": "Sofiia Shevtsova",
    "devDependencies": {
