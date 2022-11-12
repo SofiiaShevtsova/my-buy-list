@@ -1,5 +1,5 @@
 import "../node_modules/modern-normalize";
-import "./styles.scss";
+import "./style/styles.scss";
 
 const formForBuy = document.querySelector(".form");
 const inputForBuy = formForBuy.querySelector("input");
