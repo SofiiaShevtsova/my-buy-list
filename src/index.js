@@ -1,5 +1,5 @@
-import "./styles.css";
 import "../node_modules/modern-normalize";
+import "./styles.scss";
 
 const formForBuy = document.querySelector(".form");
 const inputForBuy = formForBuy.querySelector("input");
@@ -9,11 +9,11 @@ const btnCleanList = document.querySelector(".clean-list");
 let itemBuy = "";
 
 function greatListItem(item) {
-  const listItem = `<li class="buy-item">${item}<button type="button" class="buy-btn">Buy</button></li>`;
+  const listItem = `<li class="buy-item"><p>${item}</p><button type="button" class="buy-btn">Купили</button></li>`;
   buyList.insertAdjacentHTML("beforeend", listItem);
 }
 
-function getItemBuy(event) {
+function onFormSubmit(event) {
   event.preventDefault();
   itemBuy = inputForBuy.value;
 
@@ -22,12 +22,16 @@ function getItemBuy(event) {
   formForBuy.reset();
 }
 
-formForBuy.addEventListener("submit", getItemBuy);
-btnCleanList.addEventListener("click", (event) => {
+function onBtnCleanClick(event) {
   buyList.innerHTML = "";
-});
-buyList.addEventListener("click", (event) => {
+}
+
+function onBtnBuyClick(event) {
   if (event.target.classList.contains("buy-btn")) {
-    console.log(event.target.parentNode.classList.add("buy"));
+    console.log(event.target.previousElementSibling.classList.add("buy"));
   }
-});
+}
+
+formForBuy.addEventListener("submit", onFormSubmit);
+btnCleanList.addEventListener("click", onBtnCleanClick);
+buyList.addEventListener("click", onBtnBuyClick);

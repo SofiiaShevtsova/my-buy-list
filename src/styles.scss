@@ -1,0 +1,99 @@
+$font-family-primery: "Pacifico", sans-serif;
+$btn-text-color: rgb(25, 68, 11);
+$text-color: rgb(25, 68, 11);
+$bgr-color: rgb(112, 196, 116);
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  background-color: $bgr-color;
+  background-image: url("./images/kisspng-scroll-clip-art-5ae1b703296649.3147503015247418911696.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  color: $text-color;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.box-form {
+  padding: 100px;
+  min-height: 800px;
+
+  text-align: center;
+  font-family: $font-family-primery;
+}
+
+.form-input {
+  padding: 15px;
+  margin: 10px auto;
+
+  color: $text-color;
+  font-size: 24px;
+  font-weight: 500;
+
+  border-radius: 10px;
+  border-color: $text-color;
+}
+
+.form-input:focus {
+  outline: 2px $text-color;
+}
+
+::placeholder {
+  color: $text-color;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.buy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.buy-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: $text-color;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.clean-list {
+  padding: 10px;
+  margin: 10px auto;
+
+  background-color: $bgr-color;
+  color: $btn-text-color;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 0.5;
+}
+
+.buy-btn {
+  padding: 5px 10px;
+  background-color: $bgr-color;
+  color: $btn-text-color;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.buy {
+  text-decoration: line-through 5px;
+}
