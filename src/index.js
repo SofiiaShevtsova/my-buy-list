@@ -16,7 +16,7 @@ function greatListItem(item) {
 function onFormSubmit(event) {
   event.preventDefault();
   if (inputForBuy.value.trim() === "") {
-    return
+    return;
   }
   itemBuy = inputForBuy.value.trim();
 
