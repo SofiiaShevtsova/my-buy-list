@@ -24,7 +24,6 @@ function onFormSubmit(event) {
   const itemArray = localStorage.getItem(ARRAY_ITEM)
     ? localStorage.getItem(ARRAY_ITEM).split(",")
     : [];
-  console.log(itemArray);
 
   if (inputForBuy.value.trim() === "") {
     return;
@@ -34,6 +33,8 @@ function onFormSubmit(event) {
       width: "500px",
       distance: "50px",
       fontSize: "24px",
+      fontFamily: "Pacifico",
+      borderRadius: "10px",
     });
     formForBuy.reset();
 
